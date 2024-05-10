@@ -1,0 +1,168 @@
+:root {
+  --primary: #1c3c8b;
+  --secondary: #54cbc7;
+  --fontlight: 500;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: rgb(204, 204, 204);
+  font-family: "Roboto", sans-serif;
+  font-weight: var(--fontlight);
+}
+a {
+  color: black;
+}
+a:hover{
+  color: var(--secondary);
+}
+i:hover {
+  color: var(--secondary);
+}
+li {
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+page[size="A4"] {
+  width: 21cm;
+  /* height: 29.7cm; */
+}
+page[size="A4"][layout="landscape"] {
+  width: 29.7cm;
+  height: 21cm;
+}
+@media print {
+  body,
+  page {
+    background: white;
+    margin: 0;
+    box-shadow: 0;
+  }
+}
+
+/* header  */
+#section {
+  width: 100%;
+  padding: 2rem;
+  /* background-color: rgb(136, 201, 136); */
+  border-bottom: 2px solid black;
+  display: flex;
+  position: relative;
+}
+#colorSpanDB {
+  position: absolute;
+  width: 2rem;
+  height: 3rem;
+  background-color: var(--primary);
+  top: 40%;
+  left: -1%;
+}
+.AboutDiv {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.AboutDiv span {
+  color: var(--secondary);
+  font-weight: var(--fontlight);
+}
+.AboutDiv p {
+  font-size: 0.9rem;
+}
+h1 {
+  color: var(--primary);
+}
+#linksContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+.linksDiv {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+/* main  */
+
+#main {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+#main span{
+  font-size: 0.9rem;
+}
+
+#mainLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#mainLeft span {
+  color: var(--secondary);
+  font-weight: var(--fontlight);
+}
+
+.descriptionDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.dateLocationDiv{
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
+}
+ #colorSpanLB{
+  position: absolute;
+  width: 2rem;
+  height: 3rem;
+  background-color: var(--secondary);
+  top: 25%;
+  left: -12%;
+}
+
+#mainRight{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 2rem;
+}
+
+#skills{
+  width: 100%;
+  /* background-color: rgb(201, 179, 179); */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.spanSkill{
+  background: rgb(209, 200, 200);
+  color: white;
+  padding: 0.5rem 0.9rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+}
